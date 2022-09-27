@@ -1,0 +1,78 @@
+.profile--events 
+{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.profileContainer
+{
+    background-color: rgba(200, 200, 200, 0.9);
+    border-radius: 1rem;
+    padding: 25px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 700px;
+}
+
+.profileContainer h2
+{
+    color: rgb(66, 66, 66);
+    font-size: 32pt;
+    font-family: 'Lobster', sans-serif;
+    text-align: center;
+    border-bottom: solid grey 2px;
+    padding: 20px;
+}
+
+/* Scrollbar */
+.profileContainer::-webkit-scrollbar 
+{
+  width: 20px;
+}
+
+/* Track */
+.profileContainer::-webkit-scrollbar-track 
+{
+  border-radius: 10px;
+  backdrop-filter: blur(.25rem) saturate(180%);
+  -webkit-backdrop-filter: blur(.25rem) saturate(180%);
+  background-color: rgba(200, 200, 200, 0.25);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ 
+/* Handle */
+.profileContainer::-webkit-scrollbar-thumb 
+{
+  background-color: orange;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.profileContainer::-webkit-scrollbar-thumb:hover
+{
+  background-color: darkorange;
+}
+
+@media only screen and (max-width: 800px) {
+  .profile--events {
+    width: 540px;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .profile--events {
+    width: 350px;
+  }
+
+  .profileContainer {
+    margin-top: 130px;
+  }
+}

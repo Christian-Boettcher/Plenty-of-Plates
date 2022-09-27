@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&effect=emboss');
+
+*, *::before, *::after
+{
+  box-sizing: border-box;
+}
+
+:root
+{
+  --primary-light-hsl: 200, 100%, 91%;
+  --primary-rgb: 0, 170, 255;
+  --primary-dark-rgb: 0, 20, 30;
+  --invalid-rgb: 204, 51, 51;
+  --valid-rgb: 0, 200, 0;
+}
+
+body 
+{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code 
+{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.fullscreen-container
+{
+  background-image: url("Shared/loginbackground.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}

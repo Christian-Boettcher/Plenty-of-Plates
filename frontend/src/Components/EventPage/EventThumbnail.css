@@ -1,0 +1,37 @@
+.event-thumbnail--container
+{
+    width: 200px;
+    margin: 5px;
+    border: none;
+}
+
+.results--thumbnailBtn
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    color:white;
+    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.results--thumbnailBtn:hover
+{
+    background-color: rgba(var(--primary-rgb), 0.5);
+    border: solid rgba(var(--primary-rgb), 0.5) 2px;
+    color: white;
+}
+
+.results--thumbnailBtn:active
+{
+    transform: scale(.95);
+}
+
+.results--thumbnail-link
+{
+    text-decoration: none;
+}

@@ -1,0 +1,122 @@
+.event-results-container
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 1rem;
+    height: 800px;
+    padding: 100px 100px 80px 100px;
+    overflow-y: scroll;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.event-results-header-container
+{
+  grid-area: header;
+}
+
+.event-results-qualified 
+{
+  grid-area: qualified;
+}
+
+.event-results-disqualified 
+{
+  grid-area: disqualified;
+}
+
+.qualified--container, .disqualified--container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event--confirmed-selectedGuests 
+{
+  grid-area: guests;
+}
+
+.event--confirmed-guest
+{
+    background-color: rgba(200, 200, 200, 1);
+    border-radius: 1rem;
+    border: none;
+    color: black;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+}
+
+.event-results-container h1, .event-results-container h2
+{
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+}
+
+.event-results-title 
+{
+  font-size: 4rem;
+}
+
+.show-counter
+{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.event-results-final-text 
+{
+  font-family: 'Lobster', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  background-color: darkorange;
+  line-height: 5rem;
+  border-radius: 1rem;
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Scrollbar */
+.event-results-container::-webkit-scrollbar 
+{
+  width: 20px;
+}
+
+/* Track */
+.event-results-container::-webkit-scrollbar-track 
+{
+  border-radius: 10px;
+  backdrop-filter: blur(.25rem) saturate(180%);
+  -webkit-backdrop-filter: blur(.25rem) saturate(180%);
+  background-color: rgba(200, 200, 200, 0.25);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ 
+/* Handle */
+.event-results-container::-webkit-scrollbar-thumb 
+{
+  background-color: orange;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.event-results-container::-webkit-scrollbar-thumb:hover
+{
+  background-color: darkorange;
+}
+
+@media only screen and (max-width: 540px) 
+{
+  .event--confirmed-guest {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .event-results-container {
+    margin-top: 130px;
+    padding: 100px;
+  }
+}

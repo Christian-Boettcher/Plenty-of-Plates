@@ -1,0 +1,185 @@
+#register--username::placeholder,
+#register--email::placeholder,
+#register--password::placeholder,
+#register--password-confirm::placeholder
+{
+  color: white;
+}
+
+.register-container
+{
+  --color: rgba(var(--primary-dark-rgb), .7);
+  background-color: var(--color);
+  box-shadow: 0 0 15px 0 var(--color);
+  padding: 40px 30px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+.success-screen
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-items: center;
+}
+
+.register-title
+{
+  margin: 0;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Lobster', sans-serif;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.register--form
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.input-group
+{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.input-group input
+{
+  color: white;
+  font-size: 1.25rem;
+  padding: .5em;
+  background-color: hsl(var(--primary-light-hsl), .3);
+  border: none;
+  outline: none;
+  border-radius: .25em !important;
+  object-fit: contain;
+}
+
+.input-group input:focus
+{
+  box-shadow: 0 0 0 1px rgb(var(--primary-rgb));
+}
+
+.input-group.invalid input
+{
+  box-shadow: 0 0 0 1px  rgb(var(--invalid-rgb));
+}
+
+.input-group.valid input
+{
+    box-shadow: 0 0 0 1px  rgb(var(--valid-rgb));
+}
+
+.input-group .msg
+{
+  color: white;
+  font-size: .75rem;
+  position: relative;
+  padding-left: 20px;
+}
+
+.msg h5
+{
+  font-size: 1rem;
+  color:white;
+}
+
+.msg p
+{
+  padding-left: 10px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.msg p.valid
+{
+  color:rgb(var(--valid-rgb));
+}
+
+.msg p.valid:before 
+{
+  position: relative;
+  left: -25px;
+  content: "\2713";
+}
+
+.input-group .msg p.invalid, 
+.input-group.invalid .msg p.invalid
+{
+  display: block;
+  color: rgb(var(--invalid-rgb));
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.input-group .msg p.invalid:before, 
+.input-group.invalid .msg p.invalid:before
+{
+  position: relative;
+  left: -25px;
+  content: "\2716";
+}
+
+.register--btn
+{
+  color:white;
+  background: rgba(var(--primary-rgb), .25);
+  padding: 15px;
+  font-size: 1.5rem;
+  border: 1px solid rgb(var(--primary-rgb));
+  border-radius: .25em;
+  outline: none;
+  cursor: pointer;
+}
+
+.register--btn:focus,
+.register--btn:hover
+{
+  color: white;
+  background-color: rgba(var(--primary-rgb), .5);
+}
+
+.login-link
+{
+  margin: 0;
+  width: 200px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+  margin: 0;
+  position: relative;
+}
+
+.login-link:hover
+{
+  color:grey;
+}
+
+.login-link:before
+{
+  position: absolute;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  width: 75%;
+  height: 2px;
+  background-color: #000;
+  content: '';
+  opacity: .3;
+  transform: scaleX(.9);
+  transition-property: opacity, transform;
+  transition-duration: .3s;
+}
+
+.login-link:hover:before
+{
+  opacity: 1;
+  transform: scaleX(1);
+}
+

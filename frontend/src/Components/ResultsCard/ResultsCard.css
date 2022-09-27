@@ -1,0 +1,61 @@
+.upvotes,.downvotes
+{
+    width: 256px;
+    height: 64px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    color: rgb(0, 200, 0);
+    font-size: 24pt;
+}
+
+.upvotes::after
+{
+    content: "Vote Yes";
+    padding-left: 5px;
+    color: white;
+}
+
+.downvotes::after
+{
+    content: "Vote No";
+    padding-left: 5px;
+    color: white;
+}
+
+.downvotes
+{
+    color: rgb(200, 0, 0);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.result-eventCreated-text
+{
+    width: 256px;
+    height: 64px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.restaurant--thumbnail
+{
+    margin: 10px;
+}
